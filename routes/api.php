@@ -4,10 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\ArticleCreateController;
-use App\Http\Controllers\ArticleGetController;
-use App\Http\Controllers\ArticleUpdateController;
-use App\Http\Controllers\ArticleDeleteController;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,10 +21,12 @@ Route::post('/users', [RegisterController::class, 'register']);
 
 Route::post('/users/login', [LoginController::class, 'login']);
 
-Route::post('/articles', [ArticleCreateController::class, 'create']);
+Route::get('/articles', [ArticleController::class, 'index']);
 
-Route::get('/articles/{slug}', [ArticleGetController::class, 'get']);
+Route::post('/articles', [ArticleController::class, 'create']);
 
-Route::put('/articles/{slug}', [ArticleUpdateController::class, 'update']);
+Route::get('/articles/{slug}', [ArticleController::class, 'get']);
 
-Route::delete('/articles/{slug}', [ArticleDeleteController::class, 'delete']);
+Route::put('/articles/{slug}', [ArticleController::class, 'update']);
+
+Route::delete('/articles/{slug}', [ArticleController::class, 'delete']);
