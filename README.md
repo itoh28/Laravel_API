@@ -1,4 +1,4 @@
-## Laravel Sailで以下の課題（ステップ2）に対するAPIを実装しました<br>※2-5 お気に入りは未実装です
+## Laravel Sailで以下の課題（ステップ1）に対するAPIを実装しました<br>
 
 ブログプラットフォームを作る [RealWorld](https://github.com/gothinkster/realworld/tree/main) という OSS のプロジェクトがあります。RealWorld は実世界と同じ機能を持つプラットフォームを作ることで、学習したいフレームワークの技術を習得することを目的としてたプロジェクトです。
 
