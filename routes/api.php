@@ -26,7 +26,7 @@ Route::get('/articles', [ArticleController::class, 'index']);
 
 Route::post('/articles', [ArticleController::class, 'create']);
 
-Route::get('/articles/{slug}', [ArticleController::class, 'get']);
+Route::get('/articles/{slug}', [ArticleController::class, 'show']);
 
 Route::put('/articles/{slug}', [ArticleController::class, 'update']);
 

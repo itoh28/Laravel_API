@@ -65,7 +65,7 @@ class ArticleController extends Controller
         ], 201);
     }
 
-    public function get($slug)
+    public function show($slug)
     {
         $article = Article::where('slug', $slug)->first();
 
