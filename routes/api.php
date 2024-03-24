@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\TagController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,5 @@ Route::get('/articles/{slug}', [ArticleController::class, 'get']);
 Route::put('/articles/{slug}', [ArticleController::class, 'update']);
 
 Route::delete('/articles/{slug}', [ArticleController::class, 'delete']);
+
+Route::get('/tags', [TagController::class, 'tags']);
